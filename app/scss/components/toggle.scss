@@ -1,0 +1,65 @@
+@use '../util/' as *;
+
+.toggle {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.3rem .45rem;
+    margin: 0;
+
+    &__wrapper {
+        width: rem(48);
+        height: rem(24);
+        position: relative;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: center;
+    }
+
+    input[type="radio"] {
+        margin: 0 rem(-2) 0 rem(-2);
+        opacity: 0;
+        width: rem(24);
+        height: rem(24);
+
+        &:focus~.toggle__button {
+            border: rem(1) solid white;
+        }
+    }
+
+    &__background {
+        border-radius: rem(12);
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        background: var(--toggle-bg);
+        pointer-events: none;
+    }
+
+    &__button {
+        position: absolute;
+        left: rem(3);
+        top: rem(3);
+        right: 100%;
+        width: rem(18);
+        height: rem(18);
+        border-radius: 50%;
+        background-color: var(--toggle-button);
+        transition: all 200ms ease-in-out;
+    }
+
+
+    #light:checked~.toggle__button {
+        left: calc(100% - 21px);
+        right: 3px;
+    }
+
+    label {
+        font-size: rem(14);
+        color: var(--toggle);
+        font-weight: 700;
+    }
+}
