@@ -14,3 +14,11 @@ Este proyecto es una demostración de las siguientes habilidades fundamentales:
     * **Persistencia de Datos:** Utilización de **`localStorage`** para guardar la preferencia de tema del usuario, asegurando que el modo de color se mantenga al recargar la página.
 * **HTML Semántico:** Estructura clara y bien definida para una correcta accesibilidad y SEO.
 * **Diseño Responsive:** La interfaz está optimizada para verse correctamente en dispositivos móviles, tablets y escritorio.
+
+  ## 🌐 Despliegue en Vivo
+
+¡Prueba la funcionalidad del sitio aquí!
+
+**[VER EL DASHBOARD EN VIVO]** 
+
+** https://joambetancur.github.io/Social-Media-Dashboard/ **
